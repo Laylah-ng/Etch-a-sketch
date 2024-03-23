@@ -7,3 +7,12 @@ for (let i = 0; i < row * col; i++) {
   boxDiv.className = "box"
   gridContainer.appendChild(boxDiv)
 }
+
+let boxDivs = document.querySelectorAll(".box")
+
+boxDivs.forEach((box) => {
+  box.addEventListener("mouseenter", () => {
+    box.style.backgroundColor = "white"
+    
+  })
+})
